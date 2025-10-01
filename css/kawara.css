@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hukidashi_nomi {
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  min-width: 120px;
+  max-width: 100%;
+  background: #FAEFE9;
+  text-align: left;
+  margin-bottom: -10px;
+}
+.hukidashi {
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  min-width: 120px;
+  max-width: 100%;
+  background: #FAEFE9;
+  text-align: left;
+  margin-bottom: -20px;
+}
+.hukidashi:before,.hukidashi_nomi:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #FAEFE9;
+}
+.hukidashi p,.hukidashi_nomi p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+.center2{
+    text-align: center;
+    margin: 60px auto 0;
+}
+.wide{
+    width: 70%;
+    margin: 40px auto;
+}
+.aline-left{
+    text-align: left;
+    margin-top: 30px;
+}
+.left{
+    text-align: left;
+    display: inline-block;
+    margin-bottom: -20px;
+}
+.text2{
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+/*---------------------タイトル---------------------*/
+h9 {
+	font-size: 25px;
+	color: #D06838;
+}
+.big2 {
+    font-size: 30px;
+	margin-right: 5px;
+}
+.service2 {
+	position: relative;
+	display: inline-block;
+}
+.service2:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;/*線の上下位置*/
+    display: inline-block;
+    width: 180px;/*線の長さ*/
+    height: 1.5px;/*線の太さ*/
+    background-color: #D06838;/*線の色*/
+}
+
+/*---------------------タイトル　先頭丸の数字---------------------*/
+h10{
+    color: #254474;
+    font-weight: 600;
+}
+.head_test {
+    margin:  0;                 /* デフォルトCSS打ち消し */     
+    position:  relative;        /* 位置調整 */
+    font-weight:  normal;       /* 文字の太さ調整 */
+    margin-bottom: 15px;        /* 周りの余白指定 */
+    border-radius:  2px;        /* 角丸指定 */
+    font-size: 23px;            /* 文字サイズ指定 */
+}
+.head_test:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;/*線の上下位置*/
+    display: inline-block;
+    width: 180px;/*線の長さ*/
+    height: 2px;/*線の太さ*/
+    background-color: #8A8A8A;/*線の色*/
+}
+.head_test-point {
+    background-color: #D06838;  /* 背景色指定 */
+    border-radius: 50%;        /* 丸くする */
+    padding: 6px;             /* 余白指定 */
+    font-size: 22px;            /* 文字サイズ指定 */
+    color: #fff;                /* 文字色指定 */
+    margin-right: 3px;
+}
+/*---------------------画像調整---------------------*/
+.ximg{
+    width: 60%;
+}
+.xximg{
+    width: 17%;
+}
+.xxximg{
+    width: 100%;
+}
+.xxxximg{
+    width: 350px;
+}
+
+/*---------------------屋根説明---------------------*/
+.flex1{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 70%;
+    margin: 20px auto;
+    font-size: 14px;
+    font-weight: 400;
+}
+.left1{
+    width: 60%;
+    margin-top: 60px;
+}
+.left2{
+    width: 40%;
+    margin-top: 30px;
+}
+.flex1 img{
+    width: 100%;
+}
+.left1 img{         /*屋根の種類の各屋根の写真サイズ*/
+    width: 300px;
+    margin-right: 15px;
+}
+.right{
+    text-align: left;
+    width: 50%;
+    margin-top: 40px;
+    paddi-left: 30px;
+}
+.right a{
+   color: #257AC0;
+   font-weight: 900;
+   text-decoration: none;
+}
+.right a:hover{
+    opacity: 0.5;
+}
+.right2{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 7%;
+}
+.mennte{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    color: #D06838;
+    text-decoration:underline;
+    text-decoration-color: #F4D32A;
+    text-decoration-style: wavy;
+    -webkit-text-decoration-color: #F4D32A;
+    -webkit-text-decoration-style: wavy;
+}
+.bg_beige{
+    background-color: rgb(254,246,236,0.5);
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+
+/*---------------------ざっくりまとめるよ---------------------*/
+.matome {
+    position: relative;
+    margin: 50px 0 2em;
+    padding: 1em;
+    border: solid 2px #D06838;
+    border-radius: 25px;
+}
+.matome .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    background: #FFF;
+    color: #D06838;
+    font-weight: bold;
+    font-size: 17px;
+}
+.wide2{
+    width: 85%;
+    margin: 2px auto;
+}
+h11{
+    background-color: #254474;
+    color: #fff;
+    padding: 4px 8px;
+}
+.chara{
+    text-align: left;
+    margin: 5px 0 25px;
+    padding-left: 50px;
+    color: #254474;
+}
+
+
+/*---------------------瓦屋根の魅力---------------------*/
+h12 {
+  position: relative;
+  color: #333;
+  display: inline-block;
+  margin: 55px auto;
+  text-shadow: 0 0 2px white;
+  font-size: 20px;
+}
+h12:before {
+  content: "";
+  position: absolute;
+  background: #ffd69d;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+.miryoku{
+    width: 100%;
+    margin: 5px auto;
+    text-align: left;
+}
+.text_orange{
+    font-weight: 600;
+    color: #D06838;
+}
+.wagawara,.yogawara{
+    text-align: left;
+    margin: 10px auto;
+}
+@media screen and (max-width: 900px){
+/*屋根の種類ー写真*/
+.left1 img{
+    margin-top: 30px;
+    width: 250px;
+    }
+}
+@media screen and (max-width: 767px){
+/*横幅*/ 
+   .wide{
+    width: 98%;
+    margin: 30px auto;
+}    
+  .wide2{
+    width: 98%;
+    margin: 0 auto;
+} 
+  .bg_beige{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+/*横ならび→縦並び*/
+  .flex1{
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+.left{
+    width: 100%;
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: 400;
+}
+.left1{
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+.left2{
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+}
+.right{
+    font-size: 14px;
+    width: 100%;
+    margin: 15px auto;
+}
+.right a{
+   font-weight: 900;
+}
+.right2{
+    margin: 20px auto 0;
+}
+/*まとめるよ*/
+.matome {
+    margin: 20px auto 2em;
+    text-align: center;
+}
+ .box-title {
+    position: absolute;
+    display: block;
+    top: -13px;
+    left: auto;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 14px;
+}
+.wide2{
+    width: 95%;
+    margin: 2px auto;
+}
+.chara{
+    text-align: left;
+    margin: 15px 0 0;
+    padding-left: 0;
+    color: #254474;
+}
+ .chara p{
+    margin: 5px auto 15px; 
+    }
+/*文字*/
+h9 {
+	font-size: 20px;
+}
+.big2 {
+    font-size: 23px;
+}
+.service2:before {
+    bottom: -7px;/*線の上下位置*/
+    width: 150px;/*線の長さ*/
+}
+
+/*先頭丸の数字*/
+h10{
+    color: #254474;
+    font-weight: 600;
+}
+.head_test {
+    margin-bottom: 10px;        /* 周りの余白指定 */
+    border-radius:  2px;        /* 角丸指定 */
+    font-size: 18px;            /* 文字サイズ指定 */
+}
+.head_test:before {
+    bottom: -7px;/*線の上下位置*/
+    width: 150px;/*線の長さ*/
+    height: 1.5px;/*線の太さ*/
+}
+.head_test-point {
+    background-color: #D06838;  /* 背景色指定 */
+    border-radius: 50%;        /* 丸くする */
+    padding: 3px;             /* 余白指定 */
+    font-size: 18px;            /* 文字サイズ指定 */
+    margin-right: 3px;
+}
+/*屋根の魅力*/
+h12 {
+  margin: 40px auto;
+  font-size: 18px;
+}
+h12:before {
+  width: 60px;
+  height: 60px;
+}
+.miryoku{
+    margin: 5px auto 20px;
+}
+/*吹き出し*/
+.hukidashi_nomi {
+  padding: 10px 20px ;
+  min-width: 0;
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.hukidashi {
+  padding: 10px 20px;
+  min-width: 0;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.hukidashi:before,.hukidashi_nomi:before {
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #FAEFE9;
+}
+/*マイスター*/
+.xximg{
+    width: 130px;
+}   
+.center2{
+    text-align: center;
+    margin: 20px auto 0;
+} 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

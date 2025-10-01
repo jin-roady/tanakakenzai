@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/*ーーーーーーーーーーーーーーー文字・位置設定ーーーーーーーーーーーーーーーー*/
+
+.setsumei{
+    font-size: 14px;
+    font-weight: 700;
+    color: #D06838;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.wide{
+    width: 70%;
+    margin: 50px auto;
+}
+
+/*ーーーーーーーーーーーーーーーQ&Aーーーーーーーーーーーーーーーー*/
+.qa-list dl {
+    position: relative;
+    margin: 50px 0 0;
+    cursor: pointer;
+    border: 2px solid #FAEFE9;
+}
+.qa-list dl:first-child {
+  margin-top: 0;
+}
+.qa-list dl::after {
+    position: absolute;
+    top: 27px;
+    right: 26px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    content: '';
+    transform: rotate(135deg);
+    border-top: 2px solid #FAEFE9;
+    border-right: 2px solid #FAEFE9;
+}
+.qa-list .open::after {
+    transform: rotate(-45deg);
+}
+.qa-list dl dt {
+    position: relative;
+    margin: 0;
+    padding: 20px 20px 20px 60px;
+    font-weight: bold;
+    background: #FAEFE9;
+}
+.qa-list dl dt::before {
+    font-size: 22px;
+    line-height: 1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    content: 'Q.';
+    color: #D06838;
+}
+.qa-list dl dd::before {
+    font-size: 22px;
+    line-height: 1;
+    position: absolute;
+    left: 20px;
+    display: block;
+    content: 'A.';
+    font-weight: bold;
+    color: #D06838;
+}
+.qa-list dl dd {
+    position: relative;
+    margin: 0;
+    padding: 20px 20px 20px 60px;
+}
+.qa-list dl dd p {
+    margin: 30px 0 0;
+}
+.qa-list dl dd p:first-child{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+ .qa-list dl {
+    margin: 40px 0 0;
+}
+.qa-list dl:after {
+    top: 20px;
+    right: 20px;
+    width: 7px;
+    height: 7px;
+}
+.qa-list dl dt {
+    padding: 10px 10px 10px 30px;
+    font-size: 14px;
+}
+.qa-list dl dt::before {
+    font-size: 14px;
+    top: 10px;
+    left: 10px;
+}
+.qa-list dl dd::before {
+    font-size: 14px;
+    left: 10px;
+    margin-top: 3px;
+}
+.qa-list dl dd {
+    margin: 0;
+    padding: 10px 10px 10px 30px;
+    font-size: 14px;
+}
+.qa-list dl dd p {
+    margin: 30px 0 0;
+}
+.qa-list dl dd p:first-child{
+    margin-top: 0;
+}
+/*横幅*/
+.wide{
+    width: 98%;
+    margin: 30px auto;
+}   
+}
