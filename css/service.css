@@ -2298,3 +2298,83 @@ h2::after {
     font-size: 14px;
   }
 }
+
+/* ヒーローは最小限の陰影＆面で落ち着き */
+.hero{
+  padding:clamp(44px,6vw,80px) 0;
+  border-radius:var(--radius);
+  background:
+    linear-gradient(180deg, var(--soft), #fff 65%);
+  border:1px solid var(--border);
+}
+
+/* 1) 主役：冒頭メッセージ（強調は“線”のみで潔く） */
+.primary-message{
+  display:inline-block;
+  font-weight:900;
+  line-height:1.25;
+  font-size:clamp(22px,3.2vw,36px);
+  color:var(--ink);
+  padding:0 .1em .15em;               /* 文字に寄せる */
+  border-bottom:4px solid var(--brand);/* シンプルな太下線だけで主役感 */
+}
+
+/* 2) 以降の文章：軽やか＆読みやすい幅 */
+.lead.center{
+  margin:14px auto 0;
+  max-width:66ch;
+  text-align:center;
+  color:var(--ink);
+  font-size:clamp(15px,1.6vw,18px);
+  line-height:1.9;
+}
+.sub-message{ color:var(--muted); margin-top:8px }
+
+/* スマホ改行の制御 */
+.sp-br{display:none}
+@media (max-width:640px){ .sp-br{display:inline} }
+
+/* 3) ベネフィット：余白と行間で“間”を作る（影なし・枠のみ） */
+.benefit-box{
+  margin:clamp(18px,3vw,28px) auto 0;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:8px 14px;
+  align-items:start;
+  max-width:720px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:clamp(10px,2.2vw,16px) clamp(12px,3vw,20px);
+}
+.benefit-icon{
+  grid-row:1 / span 2;
+  width:32px; height:32px;
+  display:grid; place-items:center;
+  font-weight:800; color:#0e7a2f;
+  border:1px solid #dbeafe;
+  border-radius:8px;
+  background:#f0f9ff;
+}
+.key-point{ margin:0; font-weight:700; line-height:1.7 }
+
+/* 4) ローカルナビ：余白＋下線のみ（ボタン化しない） */
+.localnav{
+  margin-top:clamp(18px,3.5vw,28px);
+  display:flex; flex-wrap:wrap; gap:12px;
+  justify-content:center;
+}
+.localnav a{
+  font-size:14px; color:var(--brand);
+  text-decoration:underline;
+  text-underline-offset:3px;
+  padding:4px 2px; border-radius:6px;
+}
+.localnav a:hover{ background:#f1f5f9 }
+
+/* 動きは極力なし（好みでコメント解除） */
+/*
+@media (prefers-reduced-motion:no-preference){
+  .localnav a{ transition:background-color .12s ease }
+}
+*/
